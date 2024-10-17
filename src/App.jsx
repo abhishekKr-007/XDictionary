@@ -9,7 +9,6 @@ const XDictionary = () => {
     { word: "Component", meaning: "A reusable building block in React." },
     { word: "State", meaning: "An object that stores data for a component." },
   ];
-
   const [searchTerm, setSearchTerm] = useState("");
   const [result, setResult] = useState("");
 
@@ -35,7 +34,7 @@ const XDictionary = () => {
         placeholder="Search for a word..."
       />
       <button onClick={handleSearch}>Search</button>
-      <p>
+      <p style={{ margin: "0" }}>
         <strong>Definition:</strong>
       </p>
       <p>{result}</p>
